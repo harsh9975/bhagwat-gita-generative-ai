@@ -1,0 +1,66 @@
+/* HeroSection.css */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  /* padding: 0 20px; */
+  background-color: #fff;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 60%;
+  text-align: left;
+  padding: 40px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  flex: 1;
+  height: 100%;
+  background-image: url("../../assets/krishna.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    position: absolute;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    opacity: 15%;
+  }
+
+  .hero-container {
+    display: block;
+    height: 100vh;
+    /* padding: 0 20px; */
+    background-color: transparent;
+    position: relative;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: left;
+  }
+}
